@@ -1,0 +1,9 @@
+homeserver_url: https://matrix.org
+username: example-user 
+password: "password"
+db_path: data.db
+session_path: session.yaml
+
+# (optional) supply a timeline_test_room to get the app to
+# continuously output a timeline
+timeline_test_room: "!iYnZafYUoXkeVPOSQh:matrix.org"

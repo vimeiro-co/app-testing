@@ -1,12 +1,15 @@
 [package]
-name = "sync-testing"
+name = "app-testing"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 anyhow = "1.0.91"
 futures-util = "0.3.31"
-matrix-sdk = { path = "matrix-rust-sdk/crates/matrix-sdk" }
+log = "0.4.22"
+matrix-sdk = { path = "matrix-rust-sdk/crates/matrix-sdk", features = ["e2e-encryption"] }
 matrix-sdk-ui = { path = "matrix-rust-sdk/crates/matrix-sdk-ui" }
+serde = "1.0.214"
+serde_yaml = "0.9.34"
 simple_logger = "5.0.0"
 tokio = { version = "1.41.0", features = ["rt-multi-thread"] }
